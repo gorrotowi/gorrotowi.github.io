@@ -3,7 +3,23 @@ html
 	head
 		meta(charset="UTF-8")
 		title GorroTowi Web
+		meta(name="descrition" content="GorroTowi Personal Webpage")
+		meta(name="author" content="@gorrotowi Sebastian Tellez Orozco")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
 		link(href='css/main.css', rel='stylesheet')
 	body
-		h1 GorroTowi
+		header#home
+			a.mobile-btn(title="Show navigation" href="#nav-wrap") Show navigation
+			a.mobile-btn(href="#" title="Hide navigation") Hide navigation
+			ul#nav.nav
+				li.current
+					a.smoothscroll(href="#about") About
+				li.current
+					a.smoothscroll(href="#resume") Resume
+				li.current
+					a.smoothscroll(href="#portfolio") Works
+				li.current
+					a.smoothscroll(href="#testimonials") Testimonials
+				li.current
+					a.smoothscroll(href="#contact") contact
