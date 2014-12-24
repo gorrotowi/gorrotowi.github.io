@@ -1,0 +1,12 @@
+{
+  "name": "Gorro's web",
+  "version": "1.0.0",
+  "description": "Personal web page of Sebastian Tellez (@gorrotowi)",
+  "author": "@gorrotowi",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1",
+	  "grunt-contrib-jade": "~0.13.0"
+  }
+}
