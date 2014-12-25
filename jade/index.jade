@@ -8,18 +8,130 @@ html
 		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
 		link(href='css/main.css', rel='stylesheet')
+		link(href='css/default.css', rel='stylesheet')
+		script(src="js/modernizr.js")
 	body
 		header#home
-			a.mobile-btn(title="Show navigation" href="#nav-wrap") Show navigation
-			a.mobile-btn(href="#" title="Hide navigation") Hide navigation
-			ul#nav.nav
-				li.current
-					a.smoothscroll(href="#about") About
-				li.current
-					a.smoothscroll(href="#resume") Resume
-				li.current
-					a.smoothscroll(href="#portfolio") Works
-				li.current
-					a.smoothscroll(href="#testimonials") Testimonials
-				li.current
-					a.smoothscroll(href="#contact") contact
+			nav#nav-wrap
+				a.mobile-btn(title="Show navigation" href="#nav-wrap") Show navigation
+				a.mobile-btn(href="#" title="Hide navigation") Hide navigation
+				ul#nav.nav
+					li.current
+						a.smoothscroll(href="#home") Home
+					li
+						a.smoothscroll(href="#about") About
+					li
+						a.smoothscroll(href="#resume") Resume
+					li
+						a.smoothscroll(href="#portfolio") Works
+					li
+						a.smoothscroll(href="#testimonials") Testimonials
+					li
+						a.smoothscroll(href="#contact") contact
+			.row.banner
+				.banner-text
+					h1.responsive-headline Soy Sebastian Tellez.
+					h3 Soy desarrollador movil en las plataformas <span>Android</span>, <span>iOS</span>, <span>BlackBerry 10</span> y <span>Firefox OS</span>,
+						|amante del <span>Software Libre</span> del <span>longboarding</span> y la cerveza. Ciclista de ocación, programador nocturno e instructor sabatino, pero sigamos y conoce más 
+						a(href="#about") acerca de mi.
+					hr
+					ul.social
+						li
+							a
+								i.fa.fa-facebook
+						li
+							a
+								i.fa.fa-twitter
+						li
+							a
+								i.fa.fa-google-plus
+						li
+							a
+								i.fa.fa-linkedin
+						li
+							a
+								i.fa.fa-instagram
+						li
+							a
+								i.fa.fa-skype
+			p.scrolldown
+				a.smoothscroll(href="#about")
+					i.icon-down-circle
+		section#about
+			.row
+				.three.columns
+					img.profile-pic(src="img/gorrotowi.png" alt="")
+				.nine.columns.main-col
+					h2 Acerca de mi
+					p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+					.row
+						.columns.contact-details
+							h2 Contacto
+							p.address
+								span Sebastian Tellez
+								span sebastian.tellez.o@gmail.com
+						.columns.download
+							p
+								a.button(href="#")
+									i.fa.fa-download Descarcar CV
+		section#resume
+			.row.education
+				.three.columns.header-col
+					h1
+						span Educacion
+				.nine.columns.main-col
+					.row.item
+						.twelve.columns
+							h3 Universidad
+							p.info Ingeniero en algo <span>&bull;</span> <em class="date"> Fecha 2010</em>
+							p 
+							|Aqui va todo ese choro que quieres aventar de lo que estas estudiando y asi, ya sabes todo bien chafa
+							|y asi para que todos digan, hay goeeee!!! se ve bien chido su experiencia escolar y la mamada, ya sabes
+					.row.item
+						.twelve.columns
+							h3 Universidad
+							p.info Ingeniero en algo <span>&bull;</span> <em class="date"> Fecha 2010</em>
+							p 
+							|Aqui va todo ese choro que quieres aventar de lo que estas estudiando y asi, ya sabes todo bien chafa
+							|y asi para que todos digan, hay goeeee!!! se ve bien chido su experiencia escolar y la mamada, ya sabes
+			.row.work
+				.three.columns.header-col
+					h1
+						span Trabajo
+				.nine.columns.main-col
+					.row.item
+						.twelve.columns
+							h3 Empresa name
+							p.info Puesto en la empresa <span>&bull;</span> <em class="date">de tal - a tal fecha</em>
+							p 
+							|Explica que tanto hacias aqui, como cuando te dormias o cuando llegabas tarde, o por que no? cuando echabas
+							|el choro de por que no salian las cosas cuando realmente lo que pasaba es que no lo habias hecho y asi :3
+					.row.item
+						.twelve.columns
+							h3 Empresa name
+							p.info Puesto en la empresa <span>&bull;</span> <em class="date">de tal - a tal fecha</em>
+							p
+							|Explica que tanto hacias aqui, como cuando te dormias o cuando llegabas tarde, o por que no? cuando echabas
+							|el choro de por que no salian las cosas cuando realmente lo que pasaba es que no lo habias hecho y asi :3
+			.row.skill
+				.three.columns.header-col
+					h1
+						span Superpoderes
+				.nine.columns.main-col
+					p 
+					|Esta seria una gran explicacion algo general de todo lo que se hacer, tal vez podria mencionar cosas como a lo que medio
+					|le tiro y despues mas abajo puedo poner lo que mas domino, asi bien casualuqui namas pa impresionar :)
+					.bars
+						ul.skills
+							li
+								span.bar-expand.android<em>Android</em>
+							li
+								span.bar-expand.ios <em>iOS</em>
+							li
+								span.bar-expand.blackberry <em>BlackBerry 10</em>
+							li
+								span.bar-expand.firefoxos <em>Firefox OS</em>
+							li
+								span.bar-expand.javascript <em>JavaScript</em>
+							li
+								span.bar-expand.html5 <em>HTML5</em>

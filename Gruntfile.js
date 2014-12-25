@@ -9,7 +9,8 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          "css/main.css": "less/main.less"
+          "css/main.css": "less/main.less",
+          "css/default.css":"less/default.less"
         }
       }
     },
