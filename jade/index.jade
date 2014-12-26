@@ -7,8 +7,9 @@ html
 		meta(name="author" content="@gorrotowi Sebastian Tellez Orozco")
 		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
-		link(href='css/main.css', rel='stylesheet')
 		link(href='css/default.css', rel='stylesheet')
+		link(href='css/main.css', rel='stylesheet')
+		link(href="css/media-queries.css" rel="stylesheet")
 		script(src="js/modernizr.js")
 	body
 		header#home
@@ -22,10 +23,10 @@ html
 						a.smoothscroll(href="#about") About
 					li
 						a.smoothscroll(href="#resume") Resume
-					li
-						a.smoothscroll(href="#portfolio") Works
-					li
-						a.smoothscroll(href="#testimonials") Testimonials
+					//- li
+					//- 	a.smoothscroll(href="#portfolio") Works
+					//- li
+					//- 	a.smoothscroll(href="#testimonials") Testimonials
 					li
 						a.smoothscroll(href="#contact") contact
 			.row.banner
@@ -37,22 +38,19 @@ html
 					hr
 					ul.social
 						li
-							a
-								i.fa.fa-facebook
-						li
-							a
+							a(href="https://twitter.com/gorrotowi" target="_blank")
 								i.fa.fa-twitter
 						li
-							a
+							a(href="https://plus.google.com/+sebastiantellez/" target="_blank")
 								i.fa.fa-google-plus
 						li
-							a
+							a(href="https://www.linkedin.com/pub/sebastian-tellez/4b/103/31b" target="_blank")
 								i.fa.fa-linkedin
 						li
-							a
+							a(href="http://instagram.com/gorrotowi/" target="_blank")
 								i.fa.fa-instagram
 						li
-							a
+							a(href="skype:sebasgorro?call")
 								i.fa.fa-skype
 			p.scrolldown
 				a.smoothscroll(href="#about")
@@ -135,3 +133,62 @@ html
 								span.bar-expand.javascript <em>JavaScript</em>
 							li
 								span.bar-expand.html5 <em>HTML5</em>
+		section#contact
+			.row.section-head
+				.two.columns.header-col
+					h1 <span>Contactame</span>
+				.ten.columns
+						p.lead Otro texto realmente extraño para que me puedas contactar...segun
+			.row
+				.eight.columns
+					form#contactForm(action="" method="post" name="contactForm")
+						fieldset
+							div
+								label(for="contactName") Nombre <span class="required">*
+								input#contactName(type="text" value="" size="35" name="contactName")
+							div
+								label(for="contactEmail") Email <span class="required">*
+								input#contactName(type="text" value="" size="35" name="contactEmail")
+							div
+								label(for="contactSubject") Asunto <span class="required">*
+								input#contactName(type="text" value="" size="35" name="contactSubject")
+							div
+								label(for="contactMessage") Mensaje <span class="required">*
+								input#contactName(type="text" value="" size="35" name="contactMessage")
+							div
+								button.submit Enviar
+								span#image-loader
+									img(src="img/loader.gif")
+					#message-warning Error, mensaje no enviado
+					#message-success Tu mensaje fue enviado, gracias!
+		footer
+			.row
+				.twelve.columns
+					ul.social-links
+						li
+							a(href="https://twitter.com/gorrotowi" target="_blank")
+								i.fa.fa-twitter
+						li
+							a(href="https://plus.google.com/+sebastiantellez/" target="_blank")
+								i.fa.fa-google-plus
+						li
+							a(href="https://www.linkedin.com/pub/sebastian-tellez/4b/103/31b" target="_blank")
+								i.fa.fa-linkedin
+						li
+							a(href="http://instagram.com/gorrotowi/" target="_blank")
+								i.fa.fa-instagram
+						li
+							a(href="skype:sebasgorro?call")
+								i.fa.fa-skype
+				#go-top
+					a.smoothscroll(title="Back to Top" href="#home")
+						i.icon-up-open
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+		script(type="text/javascript")
+			window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"<\/script')
+		script(type="text/javascript" src="js/jquery-migrate-1.2.1.min.js")
+		script(src="js/jquery.flexslider.js")
+		script(src="js/waypoints.js")
+		script(src="js/jquery.fittext.js")
+		script(src="js/magnific-popup.js")
+		script(src="js/init.js")
