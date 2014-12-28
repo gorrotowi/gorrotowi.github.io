@@ -316,7 +316,7 @@ header .scrolldown a:hover {
 
    margin: 0;
    padding-right: 24px;
-  	background: @color-gray;
+  	background: @color-accent;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
@@ -324,7 +324,7 @@ header .scrolldown a:hover {
 }
 
 .android {
-  	width: 80%;
+  	width: 90%;
   	-moz-animation: android 2s ease;
   	-webkit-animation: android 2s ease;
 }
@@ -335,7 +335,7 @@ header .scrolldown a:hover {
 }
 
 .ios {
-  	width: 50%;
+  	width: 65%;
   	-moz-animation: ios 2s ease;
   	-webkit-animation: ios 2s ease;
 }
@@ -347,7 +347,7 @@ header .scrolldown a:hover {
 }
 
 .firefoxos {
-  	width: 55%;
+  	width: 65%;
   	-moz-animation: firefoxos 2s ease;
   	-webkit-animation: firefoxos 2s ease;
 }
@@ -359,19 +359,19 @@ header .scrolldown a:hover {
 }
 
 .linux {
-    width: 45%;
+    width: 55%;
     -moz-animation: linux 2s ease;
     -webkit-animation: linux 2s ease;
 }
 
 @-moz-keyframes android {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 90%;  }
 }
 
 @-webkit-keyframes android {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 90%;  }
 }
 
 @-moz-keyframes html5 {
@@ -386,12 +386,12 @@ header .scrolldown a:hover {
 
 @-moz-keyframes ios {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 65%;  }
 }
 
 @-webkit-keyframes ios {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 65%;  }
 }
 
 @-moz-keyframes blackberry {
@@ -406,12 +406,12 @@ header .scrolldown a:hover {
 
 @-moz-keyframes firefoxos {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 65%;  }
 }
 
 @-webkit-keyframes firefoxos {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 65%;  }
 }
 
 @-moz-keyframes javascript {
@@ -426,12 +426,12 @@ header .scrolldown a:hover {
 
 @-moz-keyframes linux {
   0%   { width: 0px;  }
-  100% { width: 45%;  }
+  100% { width: 55%;  }
 }
 
 @-webkit-keyframes linux {
   0%   { width: 0px;  }
-  100% { width: 45%;  }
+  100% { width: 55%;  }
 }
 
 #contact {
@@ -449,7 +449,7 @@ header .scrolldown a:hover {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #EBEEEE;
+   color: @color-accent;
    margin-bottom: 6px;
 }
 #contact h1 span { display: none; }
@@ -474,6 +474,11 @@ header .scrolldown a:hover {
    color: @color-white;
    padding-right: 3%;
 }
+
+#contact p.address {
+  color: @color-accent;
+}
+
 #contact .header-col { padding-top: 6px; }
 
 
